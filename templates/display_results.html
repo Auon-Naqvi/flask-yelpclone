@@ -2,14 +2,11 @@
 <html>
 <head>
   <title>
-    My Yelpclone Website - Results Page
+    My Yelp
   </title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class = "jumbotron">
-    <div class = "container">
       <h3>Here are your top 3 recommendations for {{ term }} in {{ location }}:</h3><br>
       
       {% for each_business in establishments %}
@@ -18,8 +15,5 @@
         <h5> Phone: {{ each_business.display_phone }} </h5>
       </li>
       {% endfor %}
-        
-    </div>
-  </div>
 </body>
 </html>
